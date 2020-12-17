@@ -3,11 +3,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="kingdomHearts.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(function(){
+            $("#rightColumn").load("rightColumn.html");
+            $("#topNav").load("topNav.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <title>Kingdom Hearts: Beginning</title>
     <link rel="icon"
           type="image/png"
-          href="stainedglass.png">
+          href="https://www.khwiki.com/images/0/00/Memorial_Clock_%2812_o%27clock%29.png">
 </head>
 <body>
 <div class="header">
@@ -16,14 +23,7 @@
 </div>
 
 <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="beginning.html">The Beginning</a>
-    <a href="#">The Full Cast</a>
-    <a href="#">Timeline</a>
-    <a href="#">List of Games</a>
-    <a href="#">Fun Stuff</a>
-    <a href="theStorySoFar.html">The Story so Far</a>
-    <a href="#" style="float:right">Recent Additions</a>
+    <div id="topNav"></div>
 </div>
 
 <div class="row">
@@ -34,8 +34,8 @@
         <ul>
             <li>
                 <h2>Sora</h2>
-                <img src="soraKH1.png" class="character">
-                <p>Sora lives on the Destiny Islands with his best friends Riku and Kairi, and all three of them dream of venturing from Destiny Islands to find out what lies beyond.
+                <img src="https://www.khwiki.com/images/thumb/2/2a/Sora_%28KH%29_%28Art%29.png/1200px-Sora_%28KH%29_%28Art%29.png" class="character">
+                <p class="center">Sora lives on the Destiny Islands with his best friends Riku and Kairi, and all three of them dream of venturing from Destiny Islands to find out what lies beyond.
                     Sora, Riku, and Kairi are inseparable and they play together often on the islands.
                     Sora and Kairi drew pictures of themselves in the Secret Place when they were younger.
                 </p>
@@ -51,8 +51,8 @@
             </li>
             <li>
                 <h2>Riku</h2>
-                <img src="rikuKH1.png" class="character">
-                <p>Sora's childhood rival.</p>
+                <img src="https://www.khwiki.com/images/d/d4/Riku_KH_Artwork.png" class="character">
+                <p class="center">Sora's childhood rival.</p>
                 <br>
                 <br>
                 <br>
@@ -68,7 +68,7 @@
             </li>
             <li>
                 <h2>Kairi</h2>
-                <img src="kairiKH1.png" class="character">
+                <img src="https://www.khwiki.com/images/thumb/0/07/Kairi_%28KH%29_%28Art%29.png/800px-Kairi_%28KH%29_%28Art%29.png" class="character">
                 <br>
                 <br>
                 <br>
@@ -84,54 +84,103 @@
                 <br>
             </li>
             <li>
+                <h2>Donald</h2>
+                <img src="https://www.khwiki.com/images/8/87/Donald_%28Art%29.png" class="character">
+                <p class="center">The King's royal magician.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </li>
+            <li>
+                <h2>Goofy</h2>
+                <img src="https://www.khwiki.com/images/a/a4/Goofy_%28Art%29.png" class="character">
+                <p class="center">The King's captain of the guard.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </li>
+            <li>
                 <h2>Maleficent</h2>
-                <img src="maleficent.png" class="character">
+                <img src="https://www.khwiki.com/images/6/62/Maleficent_KHX.png" class="character">
+                <p class="center">The Mistress of All Evil, what more is there to say?</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </li>
         </ul>
+        <h1 class="title">Recommended Playing Order</h1>
+        <h2 class="center">(Left to Right)</h2>
+        <div class="row">
+            <div class="column">
+                <img src="https://www.khwiki.com/images/5/57/Kingdom_Hearts_Final_Mix_Logo_KHFM.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/4/44/Kingdom_Hearts_ReChain_of_Memories_Logo_KHRECOM.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/b/b5/Kingdom_Hearts_358-2_Days_Logo_KHD.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/2/2c/Kingdom_Hearts_II_Final_Mix_Logo_KHIIFM.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/b/bf/Kingdom_Hearts_Birth_by_Sleep_Final_Mix_Logo_KHBBSFM.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/thumb/c/ca/Kingdom_Hearts_Recoded_Logo_KHREC.png/1600px-Kingdom_Hearts_Recoded_Logo_KHREC.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/9/9a/Kingdom_Hearts_Dream_Drop_Distance_HD_Logo.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/thumb/c/c5/Kingdom_Hearts_Birth_by_Sleep_0.2_A_fragmentary_passage_Logo.png/1600px-Kingdom_Hearts_Birth_by_Sleep_0.2_A_fragmentary_passage_Logo.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/9/91/Kingdom_Hearts_X_Back_Cover_Logo.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/thumb/5/55/Kingdom_Hearts_III_Logo_KHIII.png/1600px-Kingdom_Hearts_III_Logo_KHIII.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/6/60/Kingdom_Hearts_III_ReMind_Logo_KHIIIR.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/3/3e/Kingdom_Hearts_Melody_of_Memory_Logo_KHMOM.png" class="logo">
+            </div>
+            <div class="column">
+                <img src="https://www.khwiki.com/images/thumb/d/dc/Kingdom_Hearts_Union_χ_Dark_Road_Logo.png/1600px-Kingdom_Hearts_Union_χ_Dark_Road_Logo.png" class="logo">
+            </div>
+        </div>
     </div>
     <div class="rightcolumn">
-        <div class="card">
-            <h2>About Me</h2>
-            <img class="focus_img" style="width:100%" src="Kevin.jpeg" >
-            <p>I am Kevin Peter Karatassos, a Kingdom Hearts fan from western Pennsylvania.
-                My goal is to introduce the Kingdom Hearts franchise to those who will enjoy it,
-                and to help those who haven't played one of the games in a long time.</p>
-        </div>
-        <div class="card">
-            <h3>Popular Pages</h3>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="re:mind.html">
-                        <img class="focus_img" src="remind.jpg">
-                        <div class="desc">Kingdom Hearts: Re:Mind</div>
-                    </a>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="melodyOfMemories.html">
-                        <img class="focus_img" src="kingdomHeartsMelody.jpg">
-                        <div class="desc">Kingdom Hearts: Melody of Memories</div>
-                    </a>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="358/2days.html">
-                        <img class="focus_img" src="kingdomHearts358.jpg">
-                        <div class="desc">Kingdom Hearts: 358/2 Days</div>
-                    </a>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="kingdomHearts3.html">
-                        <img class="focus_img" src="kingdomHearts3.jpg">
-                        <div class="desc">Kingdom Hearts III</div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div id="rightColumn"></div>
     </div>
 </div>
 <a href="https://downloads.khinsider.com/kingdom-hearts/?u=2417734" target="_blank">
