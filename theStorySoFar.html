@@ -3,6 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="kingdomHearts.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(function(){
+            $("#rightColumn").load("rightColumn.html");
+            $("#topNav").load("topNav.html");
+        });
+    </script>
     <meta charset="UTF-8">
     <title>Kingdom Hearts</title>
     <link rel="icon"
@@ -19,74 +26,26 @@
             return Math.floor(Math.random() * (max - min + 1) ) + min;
         }
 
-        var quote = ["\"Somewhere out there, there's this tree with star-shaped fruit, and the fruit represents an unbreakable connection.\"",
+        const QUOTE = ["\"Somewhere out there, there's this tree with star-shaped fruit, and the fruit represents an unbreakable connection.\"",
             "\"May your heart be your guiding key\"",
             "\"I know now, without a doubt. Kingdom Hearts... is LIGHT!\"",
-            "\"The heart may be weak, and sometimes it may even give in. But I've learned that deep down, there's a light that never goes out!\""]
-        document.getElementById("quote").innerHTML = quote[getRndInteger(0,3)];
+            "\"The heart may be weak, and sometimes it may even give in. But I've learned that deep down, there's a light that never goes out!\""];
+        document.getElementById("quote").innerHTML = QUOTE[getRndInteger(0,3)];
     </script>
 </div>
 
 <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="beginning.html">The Beginning</a>
-    <a href="#">The Full Cast</a>
-    <a href="#">Timeline</a>
-    <a href="#">List of Games</a>
-    <a href="#">Fun Stuff</a>
-    <a href="theStorySoFar.html">The Story so Far</a>
-    <a href="#" style="float:right">Recent Additions</a>
+    <div id="topNav"></div>
 </div>
 
 <div class="row">
     <div class="leftcolumn">
         <h2 class="warning">WARNING: This page contains major spoilers!</h2>
         <p class="title">The Story So Far</p>
-        <img style="width:100%" src="bookOfProphesies.png">
+        <img style="width:100%" src="https://www.khwiki.com/images/1/1a/Book_of_Prophecies_Page_C_KHX.png">
     </div>
     <div class="rightcolumn">
-        <div class="card">
-            <h2>About Me</h2>
-            <img class="focus_img" style="width:100%" src="Kevin.jpeg" >
-            <p>I am Kevin Peter Karatassos, a Kingdom Hearts fan from western Pennsylvania.
-                My goal is to introduce the Kingdom Hearts franchise to those who will enjoy it,
-                and to help those who haven't played one of the games in a long time.</p>
-        </div>
-        <div class="card">
-            <h3>Popular Pages</h3>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="re:mind.html">
-                        <img class="focus_img" src="remind.jpg">
-                        <div class="desc">Kingdom Hearts: Re:Mind</div>
-                    </a>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="melodyOfMemories.html">
-                        <img class="focus_img" src="kingdomHeartsMelody.jpg">
-                        <div class="desc">Kingdom Hearts: Melody of Memories</div>
-                    </a>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="358/2days.html">
-                        <img class="focus_img" src="kingdomHearts358.jpg">
-                        <div class="desc">Kingdom Hearts: 358/2 Days</div>
-                    </a>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="popular_pages">
-                    <a href="kingdomHearts3.html">
-                        <img class="focus_img" src="kingdomHearts3.jpg">
-                        <div class="desc">Kingdom Hearts III</div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div id="rightColumn"></div>
     </div>
 </div>
 <a href="https://downloads.khinsider.com/kingdom-hearts/?u=2417734" target="_blank">
