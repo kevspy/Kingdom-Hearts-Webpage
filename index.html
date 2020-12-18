@@ -39,22 +39,50 @@
     </div>
 
     <div class="row">
-        <div class="leftcolumn">
+        <div class="leftColumn">
             <div class="card">
                 <h2><a href="beginning.html">The Beginning</a></h2>
-                <h5>Who is the cast of the world of Kingdom Hearts, Sep. 6, 2020</h5>
-                <a href="beginning.html"><img class="focus_img" style="width:100%" src="https://www.khwiki.com/images/8/88/Destiny_Islands_%28Art%29.png" alt="Destiny Islands"></a>
+                <h5>Who is the cast of the world of Kingdom Hearts?, Sep. 6, 2020</h5>
+                <a href="beginning.html"><img src="https://www.khwiki.com/images/8/88/Destiny_Islands_%28Art%29.png" id="toggleImage" class="focus_img" alt="Destiny Islands" onload="toggleImage();"></a>
+                <script>
+                    function checkTime() {
+                        let d = new Date(); // current time
+                        let hours = d.getHours();
+                        let minutes = d.getMinutes();
+
+                        return hours >= 9
+                            && (hours < 17 || hours === 17 && minutes <= 30);
+                    }
+                    function toggleImage() {
+                        let img1 = "https://www.khwiki.com/images/8/88/Destiny_Islands_%28Art%29.png";
+                        let img2 = "https://www.khwiki.com/images/8/88/Seashore_%28Art%29.png";
+
+                        let imgElement = document.getElementById('toggleImage');
+
+                        if (checkTime()) {
+                            imgElement.src = img1;
+                        } else {
+                            imgElement.src = img2;
+                        }
+                    }
+                </script>
                 <p>Feeling lost on where to start your adventure into the World of Kingdom Hearts this is where I suggest new fans should go.
-                    It also contains the recomended playing order of the games that this site is based off of.</p>
+                    It also contains the recommended playing order of the games that this site is based off of.</p>
+            </div>
+            <div class="card">
+                <h2><a href="soundtrackArtwork.html">Soundtrack Covers</a></h2>
+                <h5>Music Art, Dec. 17, 2020</h5>
+                <a href="soundtrackArtwork.html"><img class="focus_img" src="SoundTracks/kh series soundtrack.png" alt="A collage of the Kingdom Hearts games leading up to 3"></a>
+                <p>Do you need some soundtrack covers for your newly acquired gamerip soundtrack?</p>
             </div>
             <div class="card">
                 <h2><a href="theStorySoFar.html">The Story So Far...</a></h2>
                 <h5>Not ready to play Kingdom Hearts III yet?, Sep. 6, 2020</h5>
-                <a href="theStorySoFar.html"><img class="focus_img" style="width:100%" src="storySoFar.jpg" alt="A collage of the Kingdom Hearts games leading up to 3"></a>
+                <a href="theStorySoFar.html"><img class="focus_img" src="storySoFar.jpg" alt="A collage of the Kingdom Hearts games leading up to 3"></a>
                 <p>This summary of the games leading up to Kingdom Hearts III will help you understand what is happening in the latest Kingdom Hearts installment.</p>
             </div>
         </div>
-        <div class="rightcolumn">
+        <div class="rightColumn">
             <div id="rightColumn"></div>
         </div>
     </div>
